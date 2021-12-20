@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++: Debug",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "preLaunchTask": "clang",
+            "relativePathBase": "${fileDirname}"
+        },
+        {
+            "name": "C++: Debug (O2)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}-o2",
+            "args": [],
+            "preLaunchTask": "clang-o2",
+            "relativePathBase": "${fileDirname}"
+        },
+        {
+            "name": "Python: Debug",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
